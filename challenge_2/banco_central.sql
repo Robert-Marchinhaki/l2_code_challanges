@@ -1,25 +1,13 @@
-USE mydb;
+use mydb;
 
 SELECT * FROM contratos;
-INSERT INTO contratos (valor_parcela, parcelas) VALUES (150, 100);
-INSERT INTO contratos (valor_parcela, parcelas) VALUES (300, 48);
-INSERT INTO contratos (valor_parcela, parcelas) VALUES (550, 24);
-INSERT INTO contratos (valor_parcela, parcelas) VALUES (1000, 12);
-
 SELECT * FROM pessoas;
-INSERT INTO pessoas (nome, contrato_id, inadimplente, dt_completo) VALUES ("Cristian
-Ghyprievy", 2, "S", Null);
-INSERT INTO pessoas (nome, contrato_id, inadimplente, dt_completo) VALUES ("Joana Cabel", 1, "S", Null);
-INSERT INTO pessoas (nome, contrato_id, inadimplente, dt_completo) VALUES ("John Serial", 3, "S", Null);
-INSERT INTO pessoas (nome, contrato_id, inadimplente, dt_completo) VALUES ("Michael Seven", 2, "N", "2021-09-25");
-
 SELECT * FROM pagamentos;
-INSERT INTO pagamentos (pessoa_id, dt_pagamento) VALUES (4, "2021-09-01");
-INSERT INTO pagamentos (pessoa_id, dt_pagamento) VALUES (4, "2021-09-05");
-INSERT INTO pagamentos (pessoa_id, dt_pagamento) VALUES (4, "2021-09-19");
-INSERT INTO pagamentos (pessoa_id, dt_pagamento) VALUES (4, "2021-09-25");
 
-SELECT * FROM completo;
+SELECT p.nome as "NOME", DAY(pg.dt_pagamento) as "DIA_MES", c.valor_parcela as "VALOR_PARCELA"
+FROM pessoas p, pagamentos pg, contratos c
+WHERE p.inadimplente = "S" and p.contrato_id = c.id and pg.pessoa_id = p.id;
 
-
-
+select p.nome as "NOME", c.valor_parcela * c.parcelas as "VALOR_TOTAL" 
+FROM pessoas p, pagamentos pg, contratos c
+WHERE p.inadimplente = "N" and p.contrato_id = c.id and pg.pessoa_id = p.id;
