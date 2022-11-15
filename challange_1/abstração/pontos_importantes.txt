@@ -1,0 +1,21 @@
+# Aspirador Inteligente
+
+# start_position = 0.0
+# handle_coordinate = 0 >= coordinate   # As cordenadas devem sempre serem maiores ou iguais a zero
+# width_length = 0 0  # largura e comprimento da sala
+# x_coordinate = 0 < length_room  # A posição x deve sempre ser menor que a largura da sala
+# y_coordinate = 0 < length_comprimento  # A posição y deve sempre ser menor que o comprimento da sala
+
+# Primeira entrada deve ser indicada por dois número separados por um espaço (string) que é 
+# responsável por indicar a largura e o comprimento do ambiente
+
+# A segunda entrada contém uma sequência composta pelos caracteres F (indicando um passo a frente), T 
+# (indicando um passo #para trás), E (indicando um rotação 90° à esquerda sem se deslocar) e D 
+# (indicando uma rotação 90° à direita sem se #deslocar).
+
+# Saída: Para cada caso de teste da entrada o programa deverá devolver uma linha correspondente, 
+# indicando a orientação final do robô (N para norte, S para sul, O para oeste e L para leste) e as 
+# coordenadas X e Y.
+
+
+
