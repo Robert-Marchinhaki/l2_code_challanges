@@ -1,13 +1,18 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nft Code Challenge</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'global/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'global/css/style.css' %}">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="top-bar">
@@ -30,28 +35,28 @@
         </div>
 
         <div class="logotypes">
-            <img src="img/logotypes/Vector.svg" alt="">
-            <img src="img/logotypes/Vector.svg1" alt="">
-            <img src="img/logotypes/Vector.svg2" alt="">
-            <img src="img/logotypes/Vector.svg3" alt="">
+            <img src="{% static 'global/img/logotypes/vector.svg' %}" alt="">
+            <img src="{% static 'global/img/logotypes/vector-1.svg' %}" alt="">
+            <img src="{% static 'global/img/logotypes/vector-2.svg' %}" alt="">
+            <img src="{% static 'global/img/logotypes/vector-3.svg' %}" alt="">
         </div>
 
         <div class="squares">
             <div class="square">
-                <img src="img/squares/Image-1.png" alt="">
+                <img src="{% static 'global/img/squares/image-1.png' %}" alt="">
                 <span>2.55 ETH</span>
-                <img src="img/squares/Image.png" alt="">
+                <img src="{% static 'global/img/squares/image.png' %}" alt="">
             </div>
         </div>
     </header>
-    
+
     <main class="latest-actions">
         <h2>Latest live actions</h2>
         <span class="arrow"></span>
-        
+
         <div class="boxes-items">
             <div class="big-box-item">
-                <img src="img/boxes_img/Image.png" alt="">
+                <img src="{% static 'global/img/boxes_img/image.png' %}" alt="">
                 <p>Tristique diam a, enim, eros tellus. Viverra etiam</p>
                 <span class="price">2.55 ETH</span>
                 <div class="time-left">
@@ -65,49 +70,50 @@
 
 
     </main>
-    
+
     <section class="first-section">
         <div>
             <div class="text">
                 <p>Overline</p>
                 <h3>Sapien ipsum scelerisque convallis fusce</h3>
-                <p>Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.</p>
+                <p>Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat
+                    aliquam commodo.</p>
             </div>
             <div class="btn">
                 <a href="#">Get started</a>
                 <a href="#">Learn more</a>
             </div>
-            
+
             <div class="img-section">
-                <img src="img/img_section/Image.png" alt="">
-                <img src="img/img_section/Image1.png" alt="">
+                <img src="{% static 'global/img/img_section/image.png' %}" alt="">
+                <img src="{% static 'global/img/img_section/image-1.png' %}" alt="">
             </div>
         </div>
     </section>
 
     <section class="section-with-icons">
         <div class="flex-icons user-active">
-            <img src="img/section_with_icons/Vector.svg" alt="">
+            <img src="{% static 'global/img/section_with_icons/vector.svg' %}" alt="">
             <span>300k</span>
             <span>User Active</span>
         </div>
         <div class="flex-icons artworks">
-            <img src="img/section_with_icons/Vector.svg" alt="">
+            <img src="{% static 'global/img/section_with_icons/vector-1.svg' %}" alt="">
             <span>52,5k</span>
             <span>Artworks</span>
         </div>
         <div class="flex-icons artists">
-            <img src="img/section_with_icons/Vector.svg" alt="">
+            <img src="{% static 'global/img/section_with_icons/vector-2.svg' %}" alt="">
             <span>17,5k</span>
             <span>Artists</span>
         </div>
         <div class="flex-icons eth-spent">
-            <img src="img/section_with_icons/Vector.svg" alt="">
+            <img src="{% static 'global/img/section_with_icons/vector-3.svg' %}" alt="">
             <span>35.58</span>
             <span>ETH Spent</span>
         </div>
     </section>
-    
+
     <footer>
         <div class="left">
             <div class="small-menu">
@@ -136,12 +142,15 @@
         </div>
 
         <div class="right">
-            <p>Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, sed egestas in. Id nam semper dolor tellus vulputate eget turpis.</p>
+            <p>Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, sed egestas in. Id nam semper
+                dolor tellus vulputate eget turpis.</p>
 
             <div class="newsletter">
                 <a href="#">Sign in</a>
             </div>
         </div>
     </footer>
+    <script src="{% static 'global/js/index.js' %}"></script>
 </body>
+
 </html>
