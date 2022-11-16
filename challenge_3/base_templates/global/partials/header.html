@@ -1,8 +1,12 @@
 {% load static %}
 
-<header>
+<header class="main-header">
     <div class="top-bar">
-        <nav>
+        <div class="logo">
+            <img class="sygnet" src="{% static 'global/img/logo/sygnet.svg' %}" alt="Website main logo">
+            <img class="logo-name" src="{% static 'global/img/logo/logo.svg' %}" alt="Website name">
+        </div>
+        <nav class="main-menu">
             <ul>
                 <li>Auctions</li>
                 <li>Roadmap</li>
@@ -10,14 +14,18 @@
                 <li>Community</li>
             </ul>
         </nav>
+        <div class="button-right">
+            <a class="btn-contact" href="#">Contact</a>
+            <a class="btn-account" href="#">My account</a>
+        </div>
     </div>
 
-    <div class="text">
-        <p>Non Fungible Tokens</p>
+    <div class="main-text">
+        <p class="text-item">Non Fungible Tokens</p>
         <div class="frame">
-            <h1>A new NFT Experience</h1>
+            <h1 class="main-title">A new NFT Experience</h1>
         </div>
-        <p>Discover, collect and sell</p>
+        <p class="text-item">Discover, collect and sell</p>
     </div>
 
     <div class="logotypes">
@@ -28,7 +36,7 @@
     </div>
 
     <div class="squares">
-        <div class="square">
+        <div class="square-item">
             <img src="{% static 'global/img/squares/image-1.png' %}" alt="">
             <span>2.55 ETH</span>
             <img src="{% static 'global/img/squares/image.png' %}" alt="">
