@@ -5,6 +5,7 @@
     --body-large: 24px;
     --body-medium: 18px;
     --body-small: 14px;
+    --overline: 15px;
 
     --primary-black: #060714;
     --primary-gray: #7780A1;
@@ -55,13 +56,19 @@ body {
     gap: 64px;
 }
 
-.main-menu ul li {
+.main-menu ul li,
+.btn-gray,
+.btn-blue {
     color: var(--primary-gray);
     font-family: var(--first-font);
     font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
 }
 
-.btn-contact {
+.btn-gray {
     color: var(--primary-gray);
     font-family: var(--first-font);
     border: 2px solid #262840;
@@ -70,11 +77,215 @@ body {
     padding: 16px 24px;
 }
 
-.btn-account {
+.btn-blue {
     font-family: var(--first-font);
     color: var(--white);
     background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
     box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 16px 24px;
+    margin-left: 16px;
+}
+
+.text-item {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-size: var(--overline);
+    line-height: 18px;
+    font-weight: 500;
+    align-items: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.text-item:last-child {
+    text-transform: capitalize;
+}
+
+.text-item:last-child {
+    font-size: var(--body-large);
+}
+
+.main-title {
+    font-family: var(--first-font);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 100%;
+    text-align: 100%;
+    letter-spacing: 0.2px;
+    color: var(--white);
+}
+
+.subtitle {
+    color: var(--white);
+    font-family: var(--first-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+}
+
+.big-box-item p {
+    font-family: var(--first-font);
+    color: var(--white);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+}
+
+.price {
+    background: rgba(81, 76, 255, 0.15);
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-family: var(--first-font);
+    color: var(--second-blue-ten);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.time-left {
+    color: var(--white);
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+}
+
+.bidding-people p {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+}
+
+.fav-number {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+}
+
+.first-section-item p {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.first-section-item p:last-child {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    text-transform: inherit;
+}
+
+.first-section-item h3 {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.qty-users {
+    font-family: var(--first-font);
+    color: var(--white); 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 115%;
+    letter-spacing: 0.2px;
+}
+
+.info {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.small-menu ul li {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.menu ul li {
+    font-family: var(--first-font);
+    color: var(--white);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.footer-right p {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+}
+
+.newsletter {
+    background-color: var(--white);
+}
+
+.newsletter span {
+    font-family: var(--second-font);
+    color: var(--primary-gray);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+}
+
+.newsletter a {
+    font-family: var(--first-font);
+    color: var(--primary-blue-opacity);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
 }
