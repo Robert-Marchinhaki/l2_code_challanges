@@ -285,6 +285,39 @@ body {
     letter-spacing: 0.2px;
 }
 
+.first-section {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.first-section-item {
+    display: grid;
+    gap: 20px;
+}
+
+.container {
+    max-width: 1392px;
+    max-height: 616px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.left-item {
+    display: grid;
+    gap: 48px;
+    text-align: start;
+}
+
 .first-section-item p {
     font-family: var(--second-font);
     color: var(--primary-gray);
@@ -315,6 +348,29 @@ body {
     line-height: 100%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
+}
+
+.btn-first-section a {
+    margin-right: 20px;
+}
+
+.right-item {
+    background-color: #7780A1;
+    max-width: 684px;
+    max-height: 616px;
+    position: relative;
+}
+
+.paint-bucket {
+    position: absolute;
+    right: -9px;
+    bottom: -131px;
+}
+
+.colered {
+    position: absolute;
+    top: -75px;
+    right: 247px;
 }
 
 .qty-users {
