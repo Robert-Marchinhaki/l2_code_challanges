@@ -373,6 +373,45 @@ body {
     right: 247px;
 }
 
+.section-with-icons {
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.container-section-info {
+    max-width: 920px;
+    max-height: 135px;
+    display: grid;
+    grid-template-areas: 
+        "icon"
+        "number"
+        "category";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    justify-items: center;
+}
+
+.container-section-info > img {
+    grid-area: icon;
+}
+
+.container-section-info > .qty-users {
+    grid-area: number;
+    }
+
+.container-section-info > .info {
+    grid-area: category;
+}
+
+
+
 .qty-users {
     font-family: var(--first-font);
     color: var(--white); 
