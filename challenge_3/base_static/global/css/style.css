@@ -29,13 +29,16 @@
 
 body {
     background-color: var(--primary-black);
+    overflow-x: hidden;
 }
 
 .main-header {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background: url('../img/header/background.png') no-repeat center;
     background-size: cover;
+    text-align: center;
 }
 
 .top-bar {
@@ -87,6 +90,20 @@ body {
     margin-left: 16px;
 }
 
+.main-title-container {
+    margin: 35px 0;
+}
+
+.main-text {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 188px auto;
+    gap: 20px;
+}
+
 .text-item {
     font-family: var(--second-font);
     color: var(--primary-gray);
@@ -107,6 +124,7 @@ body {
 }
 
 .main-title {
+    display: flex;
     font-family: var(--first-font);
     font-weight: 600;
     font-style: normal;
@@ -117,6 +135,10 @@ body {
     color: var(--white);
 }
 
+.main-title:nth-child(2) {
+    margin-left: 75px;
+}
+
 .subtitle {
     color: var(--white);
     font-family: var(--first-font);
@@ -125,6 +147,26 @@ body {
     font-size: 36px;
     line-height: 45px;
     letter-spacing: 0.2px;
+}
+
+.logotypes {
+    max-width: 624px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.square-item {
+    max-width:10px;
+    max-height:10px;
+    object-fit: fill;
+    width: auto;
+    height: auto;
+    top: 250px;
+    position: absolute;
+    left: -31px;
 }
 
 .big-box-item p {
