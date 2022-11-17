@@ -32,13 +32,24 @@ body {
     overflow-x: hidden;
 }
 
+/* img {
+    width: 100%;
+} */
+
+.logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .main-header {
     position: relative;
     width: 100vw;
     height: 100vh;
     background: url('../img/header/background.png') no-repeat center;
     background-size: cover;
-    text-align: center;
 }
 
 .top-bar {
@@ -46,10 +57,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 32px 39px;
-}
-
-.logo-name {
-    background: var(--primary-black);
 }
 
 .main-menu ul {
@@ -94,6 +101,11 @@ body {
     margin: 35px 0;
 }
 
+.main-title:last-child span img {
+    width: 62px;
+    height: 62px;
+}
+
 .main-text {
     max-width: 640px;
     display: flex;
@@ -105,6 +117,7 @@ body {
 }
 
 .text-item {
+    z-index: 1;
     font-family: var(--second-font);
     color: var(--primary-gray);
     font-size: var(--overline);
@@ -139,6 +152,11 @@ body {
     margin-left: 75px;
 }
 
+.latest-actions {
+    text-align: center;
+    margin-top: 200px;
+}
+
 .subtitle {
     color: var(--white);
     font-family: var(--first-font);
@@ -147,6 +165,26 @@ body {
     font-size: 36px;
     line-height: 45px;
     letter-spacing: 0.2px;
+}
+
+.boxes-container {
+    margin-top: 67px;
+    display: flex;
+    gap: 76px;
+    flex-wrap: nowrap;
+    flex-shrink: initial;
+}
+
+.test-div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    grid-template-areas:
+        "p"
+        "span";
+    grid-template-columns: 276px 1fr;
+    margin: 24px 26px 30px 24px;
 }
 
 .logotypes {
@@ -159,14 +197,17 @@ body {
 }
 
 .square-item {
-    max-width:10px;
-    max-height:10px;
-    object-fit: fill;
+    /* object-fit: fill; */
     width: auto;
     height: auto;
     top: 250px;
     position: absolute;
     left: -31px;
+}
+
+.big-box-item {
+    background-color: var(--primary-black-blue);
+    border-radius: 20px;
 }
 
 .big-box-item p {
@@ -179,7 +220,17 @@ body {
     letter-spacing: 0.2px;
 }
 
+.boxes-img {
+    text-align: center;
+    margin: 24px auto 0 auto;
+    border-radius: 20px;
+}
+
 .price {
+    border-radius: 20px;
+    text-align: center;
+    width: 97px;
+    height: 36px;
     background: rgba(81, 76, 255, 0.15);
     border-radius: 4px;
     padding: 8px 14px;
@@ -193,6 +244,7 @@ body {
 }
 
 .time-left {
+    text-align: start;
     color: var(--white);
     font-family: var(--second-font);
     font-style: normal;
@@ -200,9 +252,20 @@ body {
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.2px;
+    margin: 0 0 40px 24px;
+}
+
+.people-container {
+    display: flex;
+    margin: 24px;
+}
+
+.bidding-people {
+    display: flex;
 }
 
 .bidding-people p {
+    margin: 0 55px 0 16px;
     font-family: var(--second-font);
     color: var(--primary-gray);
     font-style: normal;

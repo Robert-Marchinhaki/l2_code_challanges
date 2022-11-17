@@ -4,113 +4,155 @@
     <h2 class="subtitle">Latest live actions</h2>
     <span class="arrow"></span>
 
-    <div class="boxes-items">
+    <div class="boxes-container">
         {% comment %} first card {% endcomment %}
         <div class="big-box-item">
-            <img src="{% static 'global/img/boxes_img/image.png' %}" alt="">
-            <p>Tristique diam a, enim, eros tellus. Viverra etiam</p>
-            <span class="price">2.55 ETH</span>
+            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image.png' %}" alt="">
+
+            <div class="test-div">
+                <p>Tristique diam a, enim, eros tellus. Viverra etiam</p>
+                <span class="price">2.55 ETH</span>
+            </div>
+
             <div class="time-left">
                 <img src="{% static 'global/img/boxes_img/timer.svg' %}" alt="">
                 <span>57:15 min left</span>
             </div>
-            <div class="bidding-people">
-                <img src="{% static 'global/img/avatars-1/image.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-1/image-1.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-1/image-2.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-1/image-3.png' %}" alt="">
-                <p>14 people are bidding</p>
-            </div>
-            <div class="fav">
-                <img src="{% static 'global/img/boxes_img/heart.svg' %}" alt="">
-                <span class="fav-number">54</span>
+
+            <div class="people-container">
+                <div class="bidding-people">
+                    <img src="{% static 'global/img/avatars-1/image.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-1/image-1.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-1/image-2.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-1/image-3.png' %}" alt="">
+                    <p>14 people are bidding</p>
+                </div>
+
+                <div class="fav">
+                    <img src="{% static 'global/img/boxes_img/heart.svg' %}" alt="">
+                    <span class="fav-number">54</span>
+                </div>
             </div>
         </div>
 
         {% comment %} second card {% endcomment %}
         <div class="big-box-item">
-            <img src="{% static 'global/img/boxes_img/image-1.png' %}" alt="">
-            <p>Vulputate felis purus viverra morbi facilisi eget</p>
-            <span class="price">3.19 ETH</span>
+            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-1.png' %}" alt="">
+            
+            <div class="test-div">
+                <p>Vulputate felis purus viverra morbi facilisi eget</p>
+                <span class="price">3.19 ETH</span>
+            </div>
+
             <div class="time-left">
                 <img src="{% static 'global/img/boxes_img/timer.svg' %}" alt="">
                 <span>2:41 min left</span>
             </div>
-            <div class="bidding-people">
-                <img src="{% static 'global/img/avatars-2/image.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-2/image-1.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-2/image-2.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-2/image-3.png' %}" alt="">
-                <p>35 people are bidding</p>
-            </div>
-            <div class="fav">
-                <img src="{% static 'global/img/boxes_img/heart_transparent.svg' %}" alt="">
-                <span class="fav-number">120</span>
+
+            <div class="people-container">
+                <div class="bidding-people">
+                    <img src="{% static 'global/img/avatars-2/image.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-2/image-1.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-2/image-2.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-2/image-3.png' %}" alt="">
+                    <p>35 people are bidding</p>
+                </div>
+                
+                <div class="fav">
+                    <img src="{% static 'global/img/boxes_img/heart_transparent.svg' %}" alt="">
+                    <span class="fav-number">120</span>
+                </div>
             </div>
         </div>
 
         {% comment %} third card {% endcomment %}
         <div class="big-box-item">
-            <img src="{% static 'global/img/boxes_img/image-2.png' %}" alt="">
-            <p>Dui accumsan leo vestibulum ornare eu</p>
-            <span class="price">1.11 ETH</span>
+
+            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-2.png' %}" alt="">
+            
+            <div class="test-div">
+                <p>Dui accumsan leo vestibulum ornare eu</p>
+                <span class="price">1.11 ETH</span>
+            </div>
+
             <div class="time-left">
                 <img src="{% static 'global/img/boxes_img/timer.svg' %}" alt="">
                 <span>22:59 min left</span>
             </div>
-            <div class="bidding-people">
-                <img src="{% static 'global/img/avatars-3/image.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-3/image-1.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-3/image-2.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-3/image-3.png' %}" alt="">
-                <p>101 people are bidding</p>
-            </div>
-            <div class="fav">
-                <img src="{% static 'global/img/boxes_img/heart.svg' %}" alt="">
-                <span class="fav-number">570</span>
+            
+            
+            <div class="people-container">
+                <div class="bidding-people">
+                    <img src="{% static 'global/img/avatars-3/image.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-3/image-1.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-3/image-2.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-3/image-3.png' %}" alt="">
+                    <p>101 people are bidding</p>
+                </div>
+                
+                <div class="fav">
+                    <img src="{% static 'global/img/boxes_img/heart.svg' %}" alt="">
+                    <span class="fav-number">570</span>
+                </div>
             </div>
         </div>
 
         {% comment %} forth card {% endcomment %}
         <div class="big-box-item">
-            <img src="{% static 'global/img/boxes_img/image-3.png' %}" alt="">
-            <p>Senectus adipiscing nascetur accumsan etiam</p>
-            <span class="price">1.63 ETH</span>
+            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-3.png' %}" alt="">
+            
+            <div class="test-div">
+                <p>Senectus adipiscing nascetur accumsan etiam</p>
+                <span class="price">1.63 ETH</span>    
+            </div>
+            
             <div class="time-left">
                 <img src="{% static 'global/img/boxes_img/timer.svg' %}" alt="">
                 <span>37:01 min left</span>
             </div>
-            <div class="bidding-people">
-                <img src="{% static 'global/img/avatars-4/image.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-4/image-1.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-4/image-2.png' %}" alt="">
-                <p>12 people are bidding</p>
-            </div>
-            <div class="fav">
-                <img src="{% static 'global/img/boxes_img/heart.svg' %}" alt="">
-                <span class="fav-number">98</span>
+
+            <div class="people-container">
+                <div class="bidding-people">
+                    <img src="{% static 'global/img/avatars-4/image.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-4/image-1.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-4/image-2.png' %}" alt="">
+                    <p>12 people are bidding</p>
+                </div>
+            
+                <div class="fav">
+                    <img src="{% static 'global/img/boxes_img/heart.svg' %}" alt="">
+                    <span class="fav-number">98</span>
+                </div>
             </div>
         </div>
 
         {% comment %} fifth card {% endcomment %}
         <div class="big-box-item">
-            <img src="{% static 'global/img/boxes_img/image-4.png' %}" alt="">
-            <p>Mattis at diam lorem nisl nam sed sociis</p>
-            <span class="price">3.19 ETH</span>
+            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-4.png' %}" alt="">
+            
+            <div class="test-div">
+                <p>Mattis at diam lorem nisl nam sed sociis</p>
+                <span class="price">3.19 ETH</span>  
+            </div>
+            
             <div class="time-left">
                 <img src="{% static 'global/img/boxes_img/timer.svg' %}" alt="">
                 <span>12:15 min left</span>
             </div>
-            <div class="bidding-people">
-                <img src="{% static 'global/img/avatars-5/image.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-5/image-1.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-5/image-2.png' %}" alt="">
-                <img src="{% static 'global/img/avatars-5/image-3.png' %}" alt="">
-                <p>19 people are bidding</p>
-            </div>
-            <div class="fav">
-                <img src="{% static 'global/img/boxes_img/heart.svg' %}" alt="">
-                <span class="fav-number">120</span>
+            
+            <div class="people-container">
+                <div class="bidding-people">
+                    <img src="{% static 'global/img/avatars-5/image.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-5/image-1.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-5/image-2.png' %}" alt="">
+                    <img src="{% static 'global/img/avatars-5/image-3.png' %}" alt="">
+                    <p>19 people are bidding</p>
+                </div>
+                
+                <div class="fav">
+                    <img src="{% static 'global/img/boxes_img/heart.svg' %}" alt="">
+                    <span class="fav-number">120</span>
+                </div>
             </div>
         </div>
     </div>
