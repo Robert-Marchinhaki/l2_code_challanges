@@ -839,4 +839,27 @@ img {
         line-height: 100%;
         letter-spacing: 0.02rem;
     }
+
+    .container-section-info {
+        grid-template-areas: none;
+        grid-template-rows: repeat(3, 20px);
+    }
+
+    .container-section-info img {
+        grid-area: none;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .container-section-info .qty-users {
+        grid-area: none;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .container-section-info .info {
+        grid-area: none;
+        grid-column: 2;
+        grid-row: 2;
+    }
 }
