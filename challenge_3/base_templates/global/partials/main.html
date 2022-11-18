@@ -8,12 +8,16 @@
 
     <div class="boxes-container">
         {% comment %} first card {% endcomment %}
-        <div class="big-box-item">
-            <img class="boxes-img" width="400" height="520"
+        <div class="big-box-item small-box-item">
+            <img class="big-box-img" width="400" height="520"
             src="{% static 'global/img/boxes_img/image.png' %}" alt=""
             >
+            
+            <img class="small-box-img" width="120" height="120"
+            src="{% static 'global/img/boxes_img/mobile-card.png' %}" alt=""
+            >
 
-            <div class="test-div">
+            <div class="description">
                 <p>Tristique diam a, enim, eros tellus. Viverra etiam</p>
                 <span class="price">2.55 ETH</span>
             </div>
@@ -22,7 +26,8 @@
                 <img width="14" height="16"
                 src="{% static 'global/img/boxes_img/timer.svg' %}" alt=""
                 >
-                <span>57:15 min left</span>
+                <span class="time">57:15</span>
+                <span class="time-unity">min left</span>
             </div>
 
             <div class="people-container">
@@ -50,9 +55,9 @@
 
         {% comment %} second card {% endcomment %}
         <div class="big-box-item">
-            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-1.png' %}" alt="">
+            <img class="big-box-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-1.png' %}" alt="">
             
-            <div class="test-div">
+            <div class="description">
                 <p>Vulputate felis purus viverra morbi facilisi eget</p>
                 <span class="price">3.19 ETH</span>
             </div>
@@ -90,9 +95,9 @@
         {% comment %} third card {% endcomment %}
         <div class="big-box-item">
 
-            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-2.png' %}" alt="">
+            <img class="big-box-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-2.png' %}" alt="">
             
-            <div class="test-div">
+            <div class="description">
                 <p>Dui accumsan leo vestibulum ornare eu</p>
                 <span class="price">1.11 ETH</span>
             </div>
@@ -130,9 +135,9 @@
 
         {% comment %} forth card {% endcomment %}
         <div class="big-box-item">
-            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-3.png' %}" alt="">
+            <img class="big-box-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-3.png' %}" alt="">
             
-            <div class="test-div">
+            <div class="description">
                 <p>Senectus adipiscing nascetur accumsan etiam</p>
                 <span class="price">1.63 ETH</span>    
             </div>
@@ -167,9 +172,9 @@
 
         {% comment %} fifth card {% endcomment %}
         <div class="big-box-item">
-            <img class="boxes-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-4.png' %}" alt="">
+            <img class="big-box-img" width="400" height="520" src="{% static 'global/img/boxes_img/image-4.png' %}" alt="">
             
-            <div class="test-div">
+            <div class="description">
                 <p>Mattis at diam lorem nisl nam sed sociis</p>
                 <span class="price">3.19 ETH</span>  
             </div>
@@ -192,7 +197,7 @@
                         src="{% static 'global/img/avatars-5/image-2.png' %}" alt="">
                         <img class="avatar-3" width="32" height="32"
                         src="{% static 'global/img/avatars-5/image-3.png' %}" alt="">
-                    </div>
+                    </div>  
                     <p>19 people are bidding</p>
                 </div>
                 

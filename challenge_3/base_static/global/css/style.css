@@ -96,6 +96,14 @@ img {
     letter-spacing: 0.02rem;
 }
 
+.button-right {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-gray {
     color: var(--primary-gray);
     font-family: var(--first-font);
@@ -138,7 +146,7 @@ img {
     z-index: 1;
     font-family: var(--second-font);
     color: var(--primary-gray);
-    font-size: var(--overline);
+    font-size: 1.5rem;
     line-height: 1.8rem;
     font-weight: 500;
     align-items: center;
@@ -147,11 +155,8 @@ img {
 }
 
 .text-item:last-child {
+    font-size: 2.4rem;
     text-transform: capitalize;
-}
-
-.text-item:last-child {
-    font-size: var(--body-large);
 }
 
 .main-title {
@@ -202,7 +207,7 @@ img {
     justify-content: center;
 }
 
-.test-div {
+.description {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -247,10 +252,14 @@ img {
     letter-spacing: 0.02rem;
 }
 
-.boxes-img {
+.big-box-img {
     text-align: center;
     margin: 24px auto 0 auto;
     border-radius: 20px;
+}
+
+.small-box-img {
+    display: none;
 }
 
 .price {
@@ -282,6 +291,10 @@ img {
     line-height: 150%;
     letter-spacing: 0.02rem;
     margin: 20px 24px 40px 24px;
+}
+
+.time {
+    margin-right: 10px;
 }
 
 .time-left img {
@@ -637,5 +650,163 @@ img {
     .paint-bucket {
         right: 55px;
         bottom: -106px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        width: 100vw;
+        height: 150vh;
+    }
+
+    .square-item {
+        display: none;
+    }
+
+    .top-bar {
+        gap: 40px;
+    }
+    
+    .top-bar, 
+    .main-menu ul,
+    .button-right,
+    .boxes-container,
+    .section-with-icons {
+        flex-direction: column;   
+    }
+    
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-text {
+        margin: 40px auto;
+        flex-wrap: wrap;
+    }
+
+    .text-item {
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .text-item:last-child {
+        font-size: 0.8rem
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+
+    .main-title:nth-child(2) {
+        margin-left: 25px;
+    }
+
+    .main-title span {
+        position: relative;
+        width: 10px;
+        height: 22.8px;
+    }
+
+    .main-title:last-child span img {
+        width: 22px;
+        height: 22px;
+        bottom: 3px;
+        right: 15px;
+    }
+
+    .main-title span img {
+        position: relative;
+        bottom: 36px;
+        right: -2px;
+    }
+
+    .logotypes {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .big-box-item {
+        display: none;
+    }
+
+    .small-box-item {
+        display: grid !important;
+        grid-template-rows: 60px 30px 30px;
+        position: relative;
+        max-width: 368px;
+        max-height: 120px;
+        display: block;
+    }
+    
+    .description {
+        margin: 0 20px;
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .time-left {
+        grid-row: 2;
+        grid-column: 2;
+        margin: 0 20px;
+    }
+
+    .people-container {
+        grid-row: 3;
+        grid-column: 2;
+        margin: 16px 20px 0 20px !important;
+        justify-content: flex-start !important;
+        align-items: flex-end;
+        gap: 57px;
+    }
+
+    .bidding-people p {
+        margin: 0 !important;
+    }
+
+    .arrow img {
+        display: none;
+    }
+
+    .boxes-container {
+        gap: 20px;       
+        align-items: center;
+    }
+
+    .avatars img, .fav-number {
+        display: none;
+    }
+
+    .big-box-img {
+        display: none;
+    }
+
+    .small-box-img {
+        display: block;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .description p {
+        font-size: 1.6rem;
+    }
+
+    .price {
+        position: absolute;
+        right: -10px;
+        bottom: 20px;
+        width: 76px;
+        height: 28px;
+    }
+    
+    .time-unity {
+        display: none;
     }
 }
