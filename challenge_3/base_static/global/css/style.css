@@ -809,4 +809,34 @@ img {
     .time-unity {
         display: none;
     }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-item {
+        max-width: 370px;
+    }
+
+    .img-section {
+        display: none;
+    }
+
+    .first-section-item p {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    .first-section-item p:last-child {
+        font-size: 1.4rem;
+        line-height: 150%;
+        letter-spacing: 0.02rem;
+    }
+    
+    .first-section-item h3 {
+        font-size: 3.2rem;
+        line-height: 100%;
+        letter-spacing: 0.02rem;
+    }
 }
