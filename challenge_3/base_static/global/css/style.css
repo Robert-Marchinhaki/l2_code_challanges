@@ -862,4 +862,28 @@ img {
         grid-column: 2;
         grid-row: 2;
     }
+
+    .main-footer {
+        max-width: 370px;
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .footer-left {
+        margin: none;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .small-menu ul {
+        flex-wrap: wrap;
+    }
+
+    .footer-mid {
+        gap: 20px;
+    }
+
+    .footer-right {
+        gap: 20px;
+    }
 }
