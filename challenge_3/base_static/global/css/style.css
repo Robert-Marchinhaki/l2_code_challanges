@@ -36,9 +36,16 @@ body {
     overflow-x: hidden;
 }
 
-/* img {
+img {
     width: 100%;
-} */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: auto;
+    gap: 15px;
+}
 
 .logo {
     display: flex;
@@ -54,6 +61,7 @@ body {
     height: 100vh;
     background: url('../img/header/background.png') no-repeat center;
     background-size: cover;
+    margin-bottom: 200px;
 }
 
 .top-bar {
@@ -191,6 +199,7 @@ body {
     gap: 76px;
     flex-wrap: nowrap;
     flex-shrink: initial;
+    justify-content: center;
 }
 
 .test-div {
@@ -220,7 +229,7 @@ body {
     height: auto;
     top: 250px;
     position: absolute;
-    left: -31px;
+    left: -5px;
 }
 
 .big-box-item {
@@ -262,6 +271,8 @@ body {
 }
 
 .time-left {
+    display: flex;
+    align-items: center;
     text-align: start;
     color: var(--white);
     font-family: var(--second-font);
@@ -270,16 +281,52 @@ body {
     font-size: 1.4rem;
     line-height: 150%;
     letter-spacing: 0.02rem;
-    margin: 0 0 40px 24px;
+    margin: 20px 24px 40px 24px;
+}
+
+.time-left img {
+    width: 14px;
+    margin-right: 10px;
 }
 
 .people-container {
     display: flex;
     margin: 24px;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.bidding-people img {
+    width: 32px;
+}
+
+.avatars {
+    margin-bottom: auto;
+}
+
+.avatar {
+    position: absolute;
+    right: 350px;
+}
+
+.avatar-1 {
+    position: absolute;
+    right: 325px;
+}
+
+.avatar-2 {
+    position: absolute;
+    right: 300px;
+}
+
+.avatar-3 {
+    position: absolute;
+    right: 275px;
 }
 
 .bidding-people {
     display: flex;
+    align-items: center;
 }
 
 .bidding-people p {
@@ -291,6 +338,12 @@ body {
     font-size: 1.4rem;
     line-height: 150%;
     letter-spacing: 0.02rem;
+}
+
+.fav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .fav-number {
@@ -464,6 +517,10 @@ body {
     margin: 54px auto 0 auto;
 }
 
+.small-menu {
+    margin: auto;
+}
+
 .small-menu ul {
     display: flex;
     flex-direction: row;
@@ -541,6 +598,7 @@ body {
     border-radius: 1.6rem;
     padding: 20px 50px;
     justify-content: space-between;
+    margin-top: auto;
 }
 
 .newsletter span {
@@ -562,4 +620,22 @@ body {
     line-height: 2rem;
     text-align: center;
     letter-spacing: 0.02rem;
+}
+
+@media (min-width: 1200px)  and (max-width: 1919px) {
+    .main-header {
+        width: 100vw;       
+        height: 120vh;
+    }
+    .container {
+        max-width: 1100px;
+    }
+    .paint-bucket, .colered {
+        width: 320px;
+        height: 320px;
+    }
+    .paint-bucket {
+        right: 55px;
+        bottom: -106px;
+    }
 }
