@@ -166,7 +166,6 @@ img {
     font-style: normal;
     font-size: 12rem;
     line-height: 100%;
-    text-align: 100%;
     letter-spacing: 0.02rem;
     color: var(--white);
 }
@@ -434,6 +433,13 @@ img {
     color: #FFFFFF;
 }
 
+.btn-first-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
 .btn-first-section a {
     margin: auto 16px auto 0;
 }
@@ -461,7 +467,7 @@ img {
     text-align: center;
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     align-items: center;
     justify-content: center;
     gap: 100px;
@@ -635,24 +641,6 @@ img {
     letter-spacing: 0.02rem;
 }
 
-@media (min-width: 1200px)  and (max-width: 1919px) {
-    .main-header {
-        width: 100vw;       
-        height: 120vh;
-    }
-    .container {
-        max-width: 1100px;
-    }
-    .paint-bucket, .colered {
-        width: 320px;
-        height: 320px;
-    }
-    .paint-bucket {
-        right: 55px;
-        bottom: -106px;
-    }
-}
-
 @media (max-width: 600px) {
     .main-header {
         width: 100vw;
@@ -667,8 +655,7 @@ img {
         gap: 40px;
     }
     
-    .top-bar, 
-    .main-menu ul,
+    .top-bar,
     .button-right,
     .boxes-container,
     .section-with-icons {
@@ -680,23 +667,27 @@ img {
         flex-direction: column;
     }
 
+    .main-menu {
+        display: none;
+    }
+
     .main-text {
         margin: 40px auto;
         flex-wrap: wrap;
     }
 
     .text-item {
-        font-size: 0.6rem;
+        font-size: 1.4rem;
         line-height: 0.8rem;
         letter-spacing: 0.2rem;
     }
 
     .text-item:last-child {
-        font-size: 0.8rem
+        font-size: 1.6rem
     }
 
     .main-title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
 
@@ -724,8 +715,7 @@ img {
     }
 
     .logotypes {
-        flex-wrap: wrap;
-        gap: 20px;
+        display: none;
     }
 
     .subtitle {
@@ -800,7 +790,7 @@ img {
 
     .price {
         position: absolute;
-        right: -10px;
+        right: 0px;
         bottom: 20px;
         width: 76px;
         height: 28px;
@@ -885,5 +875,112 @@ img {
 
     .footer-right {
         gap: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+    .main-menu,
+    .square-item,
+    .img-section {
+        display: none;
+    }
+
+    .main-title {
+        font-size: 7rem;
+    }
+
+    .main-title span {
+        width: calc(40px / 1.5);
+        height: calc(91px / 1.5);
+        position: relative;
+    }
+
+    .main-title span img {
+        position: absolute;
+        left: 5px;
+        top: -10px;
+    }
+
+    .main-title:last-child span img {
+        position: absolute;
+        left: -40px;
+        top: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+
+    .section-with-icons {
+        flex-direction: column;
+        max-width: 700px;
+    }
+
+    .container-section-info {
+        grid-template-areas: none;
+        grid-template-rows: repeat(3, 20px);
+    }
+
+    .container-section-info img {
+        grid-area: none;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .container-section-info .qty-users {
+        grid-area: none;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .container-section-info .info {
+        grid-area: none;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .main-footer {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 600px;
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .footer-left {
+        margin: none;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .small-menu ul {
+        flex-wrap: wrap;
+    }
+
+    .footer-mid {
+        gap: 20px;
+    }
+
+    .footer-right {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1101px)  and (max-width: 1919px) {
+    .main-header {
+        width: 100vw;       
+        height: 120vh;
+    }
+    .container {
+        max-width: 1100px;
+    }
+    .paint-bucket, .colered {
+        width: 320px;
+        height: 320px;
+    }
+    .paint-bucket {
+        right: 55px;
+        bottom: -106px;
     }
 }
